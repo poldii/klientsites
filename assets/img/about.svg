@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 720" role="img" aria-label="Заглушка: фото на сцене">
+  <rect width="640" height="720" fill="#A7E8D0"/>
+  <circle cx="140" cy="140" r="90" fill="#FFD24A"/>
+  <circle cx="540" cy="560" r="130" fill="#CDB8FF"/>
+  <g fill="#1E1530">
+    <rect x="60" y="600" width="520" height="14" rx="7"/>
+    <path d="M230 600c0-120 40-210 100-210s100 90 100 210z"/>
+  </g>
+  <ellipse cx="330" cy="330" rx="60" ry="70" fill="#F2B9A0"/>
+  <path d="M268 322c-8-82 50-112 100-92 42 16 50 66 30 110-4-44-22-68-70-72-30 3-52 18-60 54z" fill="#3A2417"/>
+  <g fill="#FF4D2E"><circle cx="110" cy="640" r="10"/><circle cx="150" cy="660" r="7"/><circle cx="520" cy="130" r="9"/><circle cx="560" cy="170" r="6"/></g>
+  <text x="320" y="60" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#1E1530" opacity=".55">заглушка · замените фото в админке</text>
+</svg>

@@ -1,0 +1,9 @@
+data/admin.php
+data/leads.php
+data/backup/
+data/.rate/
+data/.login/
+uploads/*
+!uploads/.htaccess
+!uploads/.gitkeep
+screenshots/

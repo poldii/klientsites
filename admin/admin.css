@@ -1,0 +1,51 @@
+:root { --ink:#1E1530; --ink2:#5b5070; --cream:#FFF3E3; --tomato:#FF4D2E; --line:#e6d7c0; --ok:#1c7a4f; --err:#b3200b; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: #fbf6ee; color: var(--ink); }
+h1 { font-size: 1.8rem; margin: 0 0 16px; }
+.bar { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 14px 24px; background: var(--ink); color: #fff; position: sticky; top: 0; z-index: 10; }
+.bar nav { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-right: auto; }
+.bar a { color: #fff; opacity: .75; text-decoration: none; padding: 4px 0; }
+.bar a.on, .bar a:hover { opacity: 1; border-bottom: 2px solid var(--tomato); }
+.bar__out { margin: 0; }
+.link { background: none; border: 0; color: #fff; text-decoration: underline; font: inherit; cursor: pointer; opacity: .8; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 24px 20px 120px; }
+.lead { color: var(--ink2); }
+.msg { padding: 14px 18px; border-radius: 12px; font-weight: 600; }
+.msg--ok { background: #dff5e9; color: var(--ok); }
+.msg--err { background: #fde3de; color: var(--err); }
+.msg--info { background: #fff0c2; color: #6b5200; }
+.panel { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 24px; display: grid; gap: 10px; max-width: 460px; }
+.login { min-height: 100vh; display: grid; place-items: center; padding: 20px; }
+label { font-weight: 600; font-size: .95rem; }
+input[type=text], input[type=password], textarea { width: 100%; font: inherit; padding: 12px 14px; border: 2px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink); }
+input:focus, textarea:focus, button:focus-visible, summary:focus-visible { outline: 3px solid var(--tomato); outline-offset: 2px; }
+textarea { resize: vertical; }
+small { display: block; color: var(--ink2); font-size: .85rem; margin-top: 4px; }
+.btn { font: inherit; font-weight: 700; padding: 14px 26px; border: 2px solid var(--ink); background: var(--ink); color: #fff; border-radius: 999px; cursor: pointer; }
+.btn:hover { background: var(--tomato); border-color: var(--tomato); }
+.btn--ghost { background: transparent; color: var(--ink); padding: 10px 18px; }
+.btn--ghost:hover { color: #fff; }
+.sec { background: #fff; border: 1px solid var(--line); border-radius: 16px; margin: 14px 0; overflow: hidden; }
+.sec summary { cursor: pointer; padding: 18px 22px; display: grid; gap: 2px; list-style: none; }
+.sec summary::-webkit-details-marker { display: none; }
+.sec summary span { font-weight: 700; font-size: 1.15rem; }
+.sec summary span::after { content: "▾"; float: right; transition: transform .2s; }
+.sec[open] summary span::after { transform: rotate(180deg); }
+.sec[open] summary { border-bottom: 1px solid var(--line); }
+.sec__body { padding: 20px 22px 24px; display: grid; gap: 18px; }
+.field { display: grid; gap: 6px; }
+.imgfield { display: flex; gap: 16px; align-items: center; }
+.thumb { width: 96px; height: 96px; object-fit: cover; border-radius: 12px; border: 1px solid var(--line); background: var(--cream); }
+.list { border: 2px dashed var(--line); border-radius: 14px; padding: 14px; display: grid; gap: 12px; margin: 0; }
+.list legend { font-weight: 700; padding: 0 8px; }
+.items { display: grid; gap: 12px; }
+.item { background: #fdf9f2; border: 1px solid var(--line); border-radius: 12px; padding: 14px; display: grid; gap: 12px; }
+.item__bar { display: flex; justify-content: space-between; align-items: center; }
+.mini { border: 1px solid var(--line); background: #fff; border-radius: 8px; padding: 6px 10px; margin-left: 6px; cursor: pointer; font: inherit; }
+.mini--del { color: var(--err); }
+.savebar { position: fixed; left: 0; right: 0; bottom: 0; padding: 14px 20px; background: rgba(251, 246, 238, .95); border-top: 1px solid var(--line); text-align: center; backdrop-filter: blur(8px); }
+.leads { display: grid; gap: 12px; padding: 0; list-style: none; }
+.leads li { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; display: grid; gap: 2px; }
+.leads time { color: var(--ink2); font-size: .85rem; }
+.leads p { margin: 4px 0 0; color: var(--ink2); }
+@media (max-width: 560px) { .imgfield { flex-direction: column; align-items: flex-start; } }
